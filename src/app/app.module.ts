@@ -9,10 +9,13 @@ import { LoginComponent } from './login/login.component';
 import { OktaAuthModule, OKTA_CONFIG } from '@okta/okta-angular';
 
 const config = {
-  issuer: "https://dev-301706.okta.com/oauth2/default",
-  redirectUri: "http://localhost:4200",
+  issuer: "https://dev-301706.okta.com/oauth2/ausr5mf82ovfbtxo74x6",
+  redirectUri: "http://localhost:4200/implicit/callback",
   clientId: "0oar4tk4jmAdbbpXD4x6",
-  pkce: true
+  pkce: true,
+  testing: {
+    disableHttpsCheck: true
+  }
 }
 
 @NgModule({

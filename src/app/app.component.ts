@@ -18,12 +18,11 @@ export class AppComponent {
   }
 
   async ngOnInit() {
-      // Get the authentication state for immediate use
       this.isAuthenticated = await this.oktaAuth.isAuthenticated();
   }
 
   login() {
-    this.oktaAuth.loginRedirect("/profile");
+    this.oktaAuth.loginRedirect("/login");
   }
 
   async logout() {
