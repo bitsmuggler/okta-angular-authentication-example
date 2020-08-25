@@ -1,9 +1,12 @@
 # okta-angular-authentication-example
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d93c0877-214a-4470-b5dd-3742bf79bcbe/deploy-status)](https://app.netlify.com/sites/priceless-jackson-30eb73/deploys)
+
 This example shows [Okta](https://developer.okta.com/) client authentication with Angular. It demonstrates the Authentication Code Flow.
 
 [Using okta-angular](https://github.com/okta/okta-oidc-js/tree/master/packages/okta-angular)
 
+* [Live Demo](https://okta-angular-authentication-example.netlify.app)
 
 ## Okta Configuration
 
