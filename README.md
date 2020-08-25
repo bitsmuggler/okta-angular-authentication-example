@@ -13,4 +13,18 @@ This example shows [okta](https://developer.okta.com/) client authentication wit
     * Base URIs: `http://localhost:4200`
     * Login redirect URIs: `http://localhost:4200/implicit/callback`
     * Logout redirect URI: `http://localhost:4200`
+* Add an authorization server (or use the default) (`API > Authorization Servers > Add Authorization Server`)
+    * Create an access policy (`<<your created or default authorization server>> > Access Policies >> Add Policy``)
+      *  Create a rule that allows you to login to the authorization server using the authorization code grant
+* Enabling Self-Registration
+    * Go to the classic modem (click top right on `Developer Console` select `classic ui`)
+    * Go to `Directory > Self Registration`
+      * Enable Self-Service Registration
+      * Check Add to Sign-In widget
+      
+## Start your app
 
+* Install all dependencies
+  * `npm install`
+* Start the application
+  * `ng serve`
