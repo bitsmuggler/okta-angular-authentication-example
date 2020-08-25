@@ -10,7 +10,7 @@ import { OktaAuthModule, OKTA_CONFIG } from '@okta/okta-angular';
 
 const config = {
   issuer: "https://dev-301706.okta.com/oauth2/ausr5mf82ovfbtxo74x6",
-  redirectUri: "http://localhost:4200/implicit/callback",
+  redirectUri: `${window.location.origin}/implicit/callback`,
   clientId: "0oar4tk4jmAdbbpXD4x6",
   pkce: true,
   testing: {
